@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #E54B4B;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 10000px;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 400;
+  padding: 20px;
+  float: left;
+  font-family: 'Lato';
+  font-size: 36px;
+}
+
+header h1 span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+ul {
+  float: right;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 30px 0 25px 0;
+  cursor: pointer;
+  margin-left: 3em;
+  position: relative;
+}
+
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  font-family: 'Ubuntu';
+}
+
+ul li a:hover {
+  color: #444;
+}
+
+.nav-login {
+  float: right;
+  margin: 25px auto;
+}
+
+.login {
+  display: inline-block;
+  margin-left: 3em;
+}
+
+.login input {
+  border: none;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  width: 10em;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.login input[type="submit"] {
+  width: auto;
+  color: white;
+  background-color: transparent;
+  padding: 4px;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: background-color, border-color ease-in-out 250ms;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #276171;
+  border-color: #276171;
+}
+
+/*hover effect navigation*/
+
+ul li a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  width: 0;
+  position: absolute;
+  top: 0;
+  transition-property: width, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+ul li a:hover::before {
+  background-color: #444;
+  width: 100%;
+}
+
+
+.main-wrapper {
+  margin: 20px auto;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.registration-form {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.registration-form input {
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "MS Shell Dlg \32";
+  background-color: lightgrey;
+  margin-bottom: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.registration-form input[type="submit"] {
+  background-color: #5eb8b6;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+.registration-form input[type="submit"]:hover {
+  Transform: scale(1.1);
+}
+
+.second-wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.comment-error {
+  text-align: center;
+}
+
+.comment-area textarea {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "MS Shell Dlg \32";
+  font-size: 12px;
+}
+
+.comment-area input[type="submit"] {
+  background-color: #5eb8b6;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 50px;
+  font-family: "MS Shell Dlg \32";
+  margin-top: 10px;
+  transition: all .2s ease-in-out;
+  align: right;
+}
+
+.comment-area input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+.comment-box {
+  width: 100%;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.comment-author {
+  float: left;
+  font-size: 12px;
+}
+
+.comment-date {
+  float: left;
+  font-size: 12px;
+}
+
+.comment-text {
+  clear: both;
+  font-size: 18px;
+}
+
+.answer-box {
+  width: 95%;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  float: right;
+  position: relative;
+}
+
+.answer-date {
+  font-size: 12px;
+}
+
+.delete-form {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.delete-form input[type="submit"] {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+}
+
+.delete-form input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+.edit-button {
+  position: absolute;
+  right: 60px;
+  top: 5px;
+}
+
+.edit-button input[type="submit"] {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+}
+
+.edit-button input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+.answer-form {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.answer-form input[type="submit"] {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+}
+
+.answer-form input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+.edit-form textarea{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "MS Shell Dlg \32";
+  font-size: 12px;
+}
+
+.edit-form input[type="submit"] {
+  background-color: #5eb8b6;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 50px;
+  font-family: "MS Shell Dlg \32";
+  margin-top: 10px;
+  transition: all .2s ease-in-out;
+  align: right;
+}
+
+.edit-form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
